@@ -1,0 +1,44 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "0"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
+  
+    
+"redirects": [
+  { "source": "/privacy", "destination": "/privacy_index.html" },
+  { "source": "/terms", "destination": "/terms_index.html" },
+  { "source": "/privacy.html", "destination": "/privacy_index.html" },
+  { "source": "/terms.html", "destination": "/terms_index.html" }
+]
+  
+}
