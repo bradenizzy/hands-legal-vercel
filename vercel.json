@@ -34,13 +34,18 @@
   ],
   
     
+"rewrites": [
+  { "source": "/privacy", "destination": "/privacy_index" },
+  { "source": "/terms", "destination": "/terms_index" },
+  { "source": "/support", "destination": "/support_index" }
+],
 "redirects": [
-  { "source": "/privacy", "destination": "/privacy_index.html" },
-  { "source": "/terms", "destination": "/terms_index.html" },
-  { "source": "/support", "destination": "/support_index.html" },
-  { "source": "/privacy.html", "destination": "/privacy_index.html" },
-  { "source": "/terms.html", "destination": "/terms_index.html" },
-  { "source": "/support.html", "destination": "/support_index.html" }
+  { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
+  { "source": "/terms.html", "destination": "/terms", "permanent": true },
+  { "source": "/support.html", "destination": "/support", "permanent": true },
+  { "source": "/privacy_index.html", "destination": "/privacy", "permanent": true },
+  { "source": "/terms_index.html", "destination": "/terms", "permanent": true },
+  { "source": "/support_index.html", "destination": "/support", "permanent": true }
 ]
   
 }
