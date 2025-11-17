@@ -17,7 +17,7 @@ Static site ready for **Vercel** with clean URLs:
 4. Keep defaults; Vercel will auto-deploy on every push.
 
 ## Add Custom Domain on Vercel
-We’ll use `legal.izzyappz.com`:
+We'll use `legal.izzyappz.com`:
 
 1. In Vercel Project → **Settings → Domains** → **Add** → enter `legal.izzyappz.com`.
 2. Vercel shows a **CNAME** target (usually `cname.vercel-dns.com`).
