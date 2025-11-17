@@ -1,42 +1,31 @@
 # Hands! AI Chef — Legal Pages (Vercel)
 
-Static site ready for **Vercel** with clean URLs:
-- https://legal.izzyappz.com/privacy
-- https://legal.izzyappz.com/terms
-- https://legal.izzyappz.com/support
+Simple static site for **App Store submission** with clean URLs.
 
-## Deploy on Vercel (GitHub flow)
-1. Create a new public repo (e.g., `hands-legal-vercel`).
-2. Upload the contents of this folder to the repo root:
-   - `index.html`
-   - `privacy_index.html`
-   - `terms_index.html`
-   - `support_index.html`
-   - `vercel.json`
-3. In Vercel, **New Project** → import the repo → Framework: **Other** (static).
-4. Keep defaults; Vercel will auto-deploy on every push.
+## Quick Deploy to Vercel
 
-## Add Custom Domain on Vercel
-We'll use `legal.izzyappz.com`:
+1. **Upload to Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Click **New Project**
+   - Drag and drop this entire folder, OR connect a GitHub repo
+   - Framework: **Other** (or just leave it as auto-detected)
+   - Click **Deploy**
 
-1. In Vercel Project → **Settings → Domains** → **Add** → enter `legal.izzyappz.com`.
-2. Vercel shows a **CNAME** target (usually `cname.vercel-dns.com`).
+2. **Get Your URLs:**
+   After deployment, Vercel gives you a URL like `your-project.vercel.app`
+   
+   Your legal pages will be at:
+   - `https://your-project.vercel.app/privacy`
+   - `https://your-project.vercel.app/terms`
+   - `https://your-project.vercel.app/support`
 
-### If your DNS is on Squarespace
-- Add a **CNAME** record:
-  - **Host/Name**: `legal`
-  - **Value/Target**: `cname.vercel-dns.com`
-  - **TTL**: default
-- Back in Vercel, wait for verification and enable **Enforce HTTPS**.
+3. **For App Store Connect:**
+   Use those three URLs when Apple asks for:
+   - Privacy Policy URL
+   - Terms of Service URL
+   - Support URL
 
-> If your DNS is at a registrar (e.g., GoDaddy, Namecheap, Cloudflare), create the same CNAME record there.
-
-## Optional: Keep old .html links working
-We added redirects in `vercel.json` so `/privacy.html` → `/privacy`, `/terms.html` → `/terms`, and `/support.html` → `/support`.
-
-## Link inside your apps
-- App Store Connect & Play Console: use `https://legal.izzyappz.com/privacy`, `https://legal.izzyappz.com/terms`, and `https://legal.izzyappz.com/support`.
-- Inside the app: Settings → About → link to those URLs.
+That's it! No custom domain needed. The `vercel.json` file handles all the routing automatically.
 
 —
 © 2025 IzzyAppz LLC
