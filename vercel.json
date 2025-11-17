@@ -35,9 +35,9 @@
   
     
 "rewrites": [
-  { "source": "/privacy", "destination": "/privacy_index" },
-  { "source": "/terms", "destination": "/terms_index" },
-  { "source": "/support", "destination": "/support_index" }
+  { "source": "/privacy", "destination": "/privacy_index.html" },
+  { "source": "/terms", "destination": "/terms_index.html" },
+  { "source": "/support", "destination": "/support_index.html" }
 ],
 "redirects": [
   { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
