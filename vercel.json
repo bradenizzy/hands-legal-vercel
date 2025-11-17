@@ -33,14 +33,16 @@
     }
   ],
   
-    
-"redirects": [
-  { "source": "/privacy", "destination": "/privacy_index.html" },
-  { "source": "/terms", "destination": "/terms_index.html" },
-  { "source": "/support", "destination": "/support_index.html" },
-  { "source": "/privacy.html", "destination": "/privacy_index.html" },
-  { "source": "/terms.html", "destination": "/terms_index.html" },
-  { "source": "/support.html", "destination": "/support_index.html" }
-]
+  "rewrites": [
+    { "source": "/privacy", "destination": "/privacy_index.html" },
+    { "source": "/terms", "destination": "/terms_index.html" },
+    { "source": "/support", "destination": "/support_index.html" }
+  ],
+  
+  "redirects": [
+    { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
+    { "source": "/terms.html", "destination": "/terms", "permanent": true },
+    { "source": "/support.html", "destination": "/support", "permanent": true }
+  ]
   
 }
